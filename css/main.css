@@ -1,8 +1,65 @@
 body {
-	background: #23241f;
-	word-wrap: break-word;
+    background: #23241f;
+    word-wrap: break-word;
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
+}
+
+#cursor {
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+
+    color: white!important;
+}
+
+@keyframes "blink" {
+    from,to {
+        color: transparent;
+    }
+
+    50% {
+        color: white;
+    }
+}
+
+@-moz-keyframes blink {
+    from,to {
+        color: transparent;
+    }
+    50% {
+        color: white;
+    }
+}
+
+@-webkit-keyframes "blink" {
+    from,to {
+        color: transparent;
+    }
+    50% {
+        color: white;
+    }
+
+}
+
+@-ms-keyframes "blink" {
+    from,to {
+        color: transparent;
+    }
+    50% {
+        color: white;
+    }
+}
+
+@-o-keyframes "blink" {
+    from,to {
+        color: transparent;
+    }
+    50% {
+        color: white;
+    }
 }

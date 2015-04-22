@@ -1,3 +1,4 @@
+// Variables
 var myself = {
     name: 'Igor Antun',
     age: 15,
@@ -36,3 +37,41 @@ var translator = [
     'plug.dj',
     'PopcornTime'
 ];
+
+
+
+// Functions
+var str = document.getElementById('code').innerHTML;
+var i = 0;
+var isTag;
+var text;
+
+document.getElementById('code').innerHTML = '';
+
+(function type() {
+    text = str.slice(0, ++i);
+
+    if(text === str)
+        return document.getElementById('code').innerHTML += '<span id="cursor">|</span>';
+
+    document.getElementById('code').innerHTML = text;
+
+    var char = text.slice(-1);
+
+    if(char === '<')
+        isTag = true;
+
+    if(char === '>')
+        isTag = false;
+
+    if(isTag)
+        return type();
+
+
+    hljs.highlightBlock(document.getElementById('code'));
+
+    if(text.length !== str.length -1)
+        document.getElementById('code').innerHTML += '|';
+
+    setTimeout(type, 25);
+}());
