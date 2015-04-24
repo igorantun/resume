@@ -46,8 +46,6 @@ var i = 0;
 var isTag;
 var text;
 
-document.getElementById('code').innerHTML = '';
-
 (function type() {
     text = str.slice(0, ++i);
 
