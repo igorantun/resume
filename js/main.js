@@ -40,12 +40,13 @@ var translator = [
 
 
 
-// Functions
+// Typewriter
 var str = document.getElementById('code').innerHTML;
 var i = 0;
 var isTag;
 var text;
 
+document.getElementById('code').style.display = 'block';
 (function type() {
     text = str.slice(0, ++i);
 
@@ -73,3 +74,21 @@ var text;
 
     setTimeout(type, 25);
 }());
+
+
+// Didn't understand shit
+var understood = false;
+
+function explainPlease() {
+    if(understood === false) {
+        document.getElementById('code').style.display = 'none';
+        document.getElementById('dummy').style.display = 'block';
+        document.getElementById('explain').innerHTML = 'Ok I think I got it';
+        understood = true;
+    } else {
+        document.getElementById('code').style.display = 'block';
+        document.getElementById('dummy').style.display = 'none';
+        document.getElementById('explain').innerHTML = 'I didn\'t understand shit';
+        understood = false;
+    }
+}
