@@ -1,6 +1,7 @@
 body {
     background: #23241f;
     word-wrap: break-word;
+    font-family: "Ubuntu";
     color: white;
 }
 
@@ -18,6 +19,33 @@ a {
 
     color: white!important;
 }
+
+
+.main {
+    text-align: center;
+}
+
+.social {
+    margin-top: 200px;
+    text-align: center;
+}
+
+
+h1 {
+    margin-bottom: 0px;
+    color: whitesmoke;
+    font-size: 4vmax;
+    text-shadow:
+        1px 1px 0 #CCC,
+        3px 3px 0 #444;
+}
+
+.icon {
+    padding: 10px;
+    color: whitesmoke;
+    font-size: 25px;
+}
+
 
 @keyframes "blink" {
     from,to {

@@ -81,11 +81,13 @@ var understood = false;
 
 function explainPlease() {
     if(understood === false) {
+        //document.body.style.background = 'white';
         document.getElementById('code').style.display = 'none';
         document.getElementById('dummy').style.display = 'block';
         document.getElementById('explain').innerHTML = 'Ok I think I got it';
         understood = true;
     } else {
+        document.body.style.background = '#23241f';
         document.getElementById('code').style.display = 'block';
         document.getElementById('dummy').style.display = 'none';
         document.getElementById('explain').innerHTML = 'I didn\'t understand shit';
