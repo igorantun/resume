@@ -20,17 +20,6 @@ a {
     color: white!important;
 }
 
-
-.main {
-    text-align: center;
-}
-
-.social {
-    margin-top: 200px;
-    text-align: center;
-}
-
-
 h1 {
     margin-bottom: 0px;
     color: whitesmoke;
@@ -38,6 +27,17 @@ h1 {
     text-shadow:
         1px 1px 0 #CCC,
         3px 3px 0 #444;
+}
+
+.center {
+    text-align: center;
+}
+
+.main {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
 }
 
 .icon {
