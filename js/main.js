@@ -39,7 +39,6 @@ var translator = [
 ];
 
 
-
 // Typewriter
 var str = document.getElementById('code').innerHTML;
 var i = 0;
@@ -81,7 +80,6 @@ var understood = false;
 
 function explainPlease() {
     if(understood === false) {
-        //document.body.style.background = 'white';
         document.getElementById('code').style.display = 'none';
         document.getElementById('dummy').style.display = 'block';
         document.getElementById('explain').innerHTML = 'Ok I think I got it';
