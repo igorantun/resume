@@ -15,7 +15,7 @@ var languages = [
 var frameworks = [
     'jQuery',
     'Express',
-    'Atom-Shell (Eletron)',
+    'Electron (Atom-Shell)',
     'NW.JS'
 ];
 
