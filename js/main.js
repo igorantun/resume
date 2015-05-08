@@ -79,7 +79,7 @@ document.getElementById('code').style.display = 'block';
     if(text.length !== str.length -1)
         document.getElementById('code').innerHTML += '|';
 
-    setTimeout(type, 25);
+    setTimeout(type, 20);
 }());
 
 

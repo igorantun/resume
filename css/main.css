@@ -29,6 +29,10 @@ a {
     color: white!important;
 }
 
+#explain {
+    float: right;
+}
+
 .center {
     text-align: center;
 }
