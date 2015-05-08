@@ -17,7 +17,7 @@ var social = function(){};
 var translations = function(){};
 
 hi.toString = function() {
-    console.log('%cHey! So, you found my little secret, huh?', styles.bold);
+    console.log('%cHey! So, you found my little secret, huh? I knew you were smart.', styles.bold);
     console.log('%cHere are some things you can do here:', styles.bold);
     console.log('%c\t hi           %c\t Shows this list', styles.bold, styles.normal);
     console.log('%c\t myself       %c\t Shows my baisc info', styles.bold, styles.normal);
