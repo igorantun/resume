@@ -39,6 +39,13 @@ var translator = [
 ];
 
 
+// Scroller
+function updateScroll(){
+    var element = document.body;
+    element.scrollTop = element.scrollHeight;
+}
+
+
 // Typewriter
 var str = document.getElementById('code').innerHTML;
 var i = 0;
@@ -47,6 +54,7 @@ var text;
 
 document.getElementById('code').style.display = 'block';
 (function type() {
+    updateScroll();
     text = str.slice(0, ++i);
 
     if(text === str)

@@ -5,6 +5,15 @@ body {
     color: white;
 }
 
+h1 {
+    margin-bottom: 0px;
+    color: whitesmoke;
+    font-size: 4vmax;
+    text-shadow:
+        1px 1px 0 #CCC,
+        3px 3px 0 #444;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -20,17 +29,14 @@ a {
     color: white!important;
 }
 
-h1 {
-    margin-bottom: 0px;
-    color: whitesmoke;
-    font-size: 4vmax;
-    text-shadow:
-        1px 1px 0 #CCC,
-        3px 3px 0 #444;
-}
-
 .center {
     text-align: center;
+}
+
+.icon {
+    padding: 10px;
+    color: whitesmoke;
+    font-size: 25px;
 }
 
 .main {
@@ -38,12 +44,6 @@ h1 {
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 5%;
-}
-
-.icon {
-    padding: 10px;
-    color: whitesmoke;
-    font-size: 25px;
 }
 
 
