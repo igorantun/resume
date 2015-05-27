@@ -66,10 +66,11 @@ frameworks.toString = function() {
 };
 
 projects.toString = function() {
-    console.log('%cSome interesting and sometimes useless stuff I\'ve made:', styles.bold);
+    console.log('%cSome interesting and sometimes useless stuff I\'ve made or contributed to:', styles.bold);
     console.log('%c\t Node-Chat      %c\t https://github.com/IgorAntun/node-chat', styles.bold, styles.normal);
     console.log('%c\t Unsplashify    %c\t https://github.com/IgorAntun/unsplashify', styles.bold, styles.normal);
     console.log('%c\t Node-Slack-IRC %c\t https://github.com/IgorAntun/node-slack-irc', styles.bold, styles.normal);
+    console.log('%c\t Agar.io Clone  %c\t https://github.com/huytd/agar.io-clone', styles.bold, styles.normal);
     return '';
 };
 
@@ -95,7 +96,9 @@ translations.toString = function() {
 // Scroller
 function updateScroll(){
     var element = document.body;
-    element.scrollTop = element.scrollHeight;
+    if((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        element.scrollTop = element.scrollHeight;
+    }
 }
 
 
