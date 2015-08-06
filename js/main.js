@@ -152,7 +152,7 @@ function explainPlease() {
         document.body.style.background = '#23241f';
         document.getElementById('code').style.display = 'block';
         document.getElementById('dummy').style.display = 'none';
-        document.getElementById('explain').innerHTML = 'I didn\'t understand sh*t';
+        document.getElementById('explain').innerHTML = 'What the ****?';
         understood = false;
     }
 }
